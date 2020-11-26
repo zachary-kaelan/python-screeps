@@ -16,6 +16,8 @@ Memory and console endpoints are from
 
 You can access the PTR by changing `screeps.com` to `screeps.com/ptr` in all URLs.
 
+All requests involving scripts and the game world require a shard be specified. You can get your shard by using `Game.shard` in the console or the `https://screeps.com/api/auth/me` request. Any GET requests that require a shard must include it as a parameter (e.g. `shard=shard3`). Any POST requests that require a shard must include it as a JSON value (e.g. `"shard": "shard3"`).
+
 # Enumeration values
 When an endpoint takes `interval` or `statName` as an argument, the valid values
 are the ones listed below.
